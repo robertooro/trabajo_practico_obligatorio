@@ -39,6 +39,14 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
     */
 }
+
+.panceta-segundo img{
+    max-width: 500px;
+    height: auto;
+}
+
+
+
 .h1-estilo{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: solid - red;
