@@ -61,7 +61,7 @@ nav{
     border-radius: 50px;/*redondea los bordes donde esta contenido el nav*/
 }
 /*IMAGENES DE LA PRIMERA PAGINA*/
-.posicion-img{/*posicion de todas las imagenes en general*/
+.posicion-img{/*posicion de todas las imagenes en general excepto bebida*/
     display: block;
     margin-left: auto;
     margin-right: 10%;
@@ -71,6 +71,15 @@ nav{
     position: relative;
 }
 
+.posicionbeb-img{/*posicion de la imagen del vaso */
+    display: flex;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 60%;
+    transform: rotate(0deg);
+    position: relative;  
+}
 .tapa-img{/*estilo de la tapa*/
     display: block;
     margin-left: auto;
@@ -123,8 +132,8 @@ nav{
 
 .bebida-img{
     display: block;
-    margin-left: auto;
-    margin-right: 10%;
+    margin-left: 10%
+    margin-right: auto;
     margin-top: 10px;
     width: 30%;
     transform: rotate(0deg);
@@ -195,11 +204,11 @@ nav{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
     color: #09f744;
-    text-align: center;
+    text-align:left;
     width: 50%;
     position: relative;
-    top: 50%; /* Ajusta la posición vertical según sea necesario */
-    left: 60%; /* Ajusta la posición horizontal según sea necesario */
+    top: 5%; /* Ajusta la posición vertical según sea necesario */
+    left: 5%; /* Ajusta la posición horizontal según sea necesario */
     transform: translate(-50%, -50%);
 }
 
@@ -431,8 +440,8 @@ img{
     width: 50%;
     height: auto;
     transform: rotate(-2deg); /*esto es para rotar la imagen y que quede recta*/
-*/    
-}
+   
+/*
 
 .bacon{
     display: block;
@@ -449,7 +458,7 @@ img{
     */
     }
     
-
+/*
 .carne1-con-queso{
     display: block;
     margin-left: auto;
@@ -462,8 +471,8 @@ img{
     align-items: center;
     max-width: 500px;
     height: auto;*/
-}
 
+/*
 .carne2-carne{
     display: block;
     margin-left: auto;
@@ -476,7 +485,7 @@ img{
     max-width: 500px;
     height: auto;
     */
-}
+/*
 
 .base-pan{
     display: block;
@@ -490,7 +499,7 @@ img{
     max-width: 500px;
     height: auto;
     */
-}
+/*
 
 .bebidas{
     display: block;
@@ -504,7 +513,7 @@ img{
     max-width: 300px;
     height: auto;
     */
-}
+
 
 
 
