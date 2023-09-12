@@ -6,13 +6,6 @@
     <link rel="stylesheet" href="estilos.css" ><!--ruta para ir a css-->
     <title>The Burguer House</title>
     
-   
-    <link role="icon" href="assets/image/favicon.ico" type="image/x-icon"> 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    
     <!-- en esta pagina va una hamburguesa que se divide en varios sectores y nos lleva a las distintas
     paginas, jungo con un vaso de cerveza o gaseosa que nos lleva tambien a la pagina de de bebidas
     en el fondo de la imagen debe haber un enlace que lleve a los datos nuestros-->
@@ -24,54 +17,128 @@
 
 </head>
     <body>
-        <section>
-        <p>
-            <h1 class="h1-estilo">The Burguer House</h1>
-        </p><!--clase para el estilo del titulo-->
-        
-        <p>
-            <h2 class="h2-estilo">La casa de la hamburguesa casera</h2><!--clase para el estilo del subtitulo-->
-        </p>
-        </section>
 
+        <header>
+            <section>
+                <p>
+                    <div class="estilo-titulo"> 
+                    <h1 class="h1-estilo">The Burguer House</h1>
+                    </div>
+                </p><!--clase para el estilo del titulo-->
+                <p>
+                    <div class="estilo-subtitulo">
+                    <h2 class="h2-estilo">La casa de la hamburguesa casera</h2><!--clase para el estilo del subtitulo-->
+                    </div>    
+                </p>
+            </section>
+        </header>
+        <nav class="estilo-navegador"> Hamburguesas | Papas fritas | Sides | Ensaladas | Bebidas | Nosotros </nav>
         
-        <section>
-            <div class="tapa-pan-imagen1">
-                <img src="assets\image\pagina_principal_tapa_superior_pan.png" alt="tapa pan"><!--imagen tapa pan-->
-                <h3 class="h3-estilo">hamburguesas</h3>
-            </div>
-        </section>
-    
-        <section>
-            <div class="panceta-imagen2">
-                <img src="assets\image\pagina_principal_bacon.png" alt="bacon">
-                <h3>papas fritas</h3>
-            </div>
-            
-            <div class="carne-imagen3">
-                <img src="assets\image\pagina_principal_carne1_con_queso.png" alt="carne">
-                <h3>sides</h3>
-            </div>
-            <div class="carne-imagen4">
-                <img src="assets\image\pagina_principal_carne2_carne.png" alt="carne">
-                <h3>ensaladas</h3>
-            </div>
-            <div class="base-pan-imagen5">
-                <img src="assets\image\pagina_principal_panBase.png" alt="base-pan">
-                <h2>Nosotros y nuestra historia</h2>    
-            </div>
-        </section>
+        <!--EN ESTE SECTOR COMIENZAN LAS IMAGENES Y SUS ENLACES-->
 
-        <section>
-            <div>
-                <img src="assets\image\pagina_principal_vaso_gaseosa.png" alt="vaso-gaseosa">
-                <h3>bebidas</h3>
-            </div>        
-        </section>
+
+ <!--CLASE DONDE SE VAN A COLOCAR LAS IMAGENES-->
+    <section>
+        <div class="posicion-img">
+                    <img src="assets\image\pagina_principal_tapa_superior_pan.png" class="tapa-img" alt="Tapa pan">
+                        <div class="texto-gral">
+                            <p>Hamburguesa</p>
+                        </div>
+                </div>
+    </section>
+   <!--PANCETA-->    
+    <section>
+                <div class="posicion-img">
+                    <img src="assets\image\pagina_principal_bacon.png" class="bacon-img" alt="bacon">
+                        <div class="texto-gral">
+                            <p>papas fritas</p>
+                        </div>
+                </div>
+    </section>
+    <!--CARNE CON QUESO-->
+    <section>
+                <div class="posicion-img">
+                    <img src="assets\image\pagina_principal_carne1_con_queso.png" class="hambqueso-img" alt="carne">
+                        <div class="texto-gral">    
+                            <p>sides</p>
+                        </div>
+                </div>
+    </section>
+    <!--CARNE SOLA-->
+    <section>
+        <div class="posicion-img">
+            <img src="assets\image\pagina_principal_carne2_carne.png" class="hambursola-img" alt="carne">
+                <div class="texto-gral">
+                    <p>ensaladas</hp>
+                </div>
+        </div>
+    </section>         
+    <!--BASE PAN-->
+    <section>
+        <div class="posicion-img">
+            <img src="assets\image\pagina_principal_panBase.png" class="basepan-img" alt="base-pan">
+                <div class="texto-gral">    
+                    <p>Nosotros y nuestra historia</p>
+                </div>    
+        </div>
+    </section>
+    <!--BEBIDA-->
+    <section>
+                <div class="posicion-img">
+                    <img src="assets\image\pagina_principal_vaso_gaseosa.png" class="bebida-img" alt="vaso-gaseosa">
+                    <div class="texto-gral">    
+                        <h3>bebidas</h3>
+                    </div>
+                </div>        
+    </section>
     
     </body>
 </html>
 
 
 
+
+
+
+<!--MANERA 1
+
+
+<section class="image-container">
+    <div class="left-image">
+        <img src="left-image.jpg" alt="Imagen a la izquierda">
+        <p>Texto izquierda</p>
+    </div>
+    <div class="right-images">
+        <div class="image-with-text">
+            <img src="image1.jpg" alt="Imagen 1">
+            <p>Texto 1</p>
+        </div>
+        <div class="image-with-text">
+            <img src="image2.jpg" alt="Imagen 2">
+            <p>Texto 2</p>
+        </div>
+        <!-- Repite para las otras imágenes -->
+    </div>
+</section>
+-->
+
+
+
+
+<!--MANERA 2-->
+
+<section class="container">
+    <div class="left-text">
+        <p>Texto a la izquierda</p>
+    </div>
+    <div class="right-texts">
+        <div class="text-with-bg" style="background-image: url('imagen1.jpg');">
+            <p>Texto 1</p>
+        </div>
+        <div class="text-with-bg" style="background-image: url('imagen2.jpg');">
+            <p>Texto 2</p>
+        </div>
+        <!-- Repite para los otros textos e imágenes de fondo -->
+    </div>
+</section>
 

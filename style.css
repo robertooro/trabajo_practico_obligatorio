@@ -4,53 +4,507 @@
     background: radial-gradient(circle, rgba(255, 230, 1, 0.651) 0%, rgba(248, 3, 3, 0.582) 35%, rgba(0,0,0,1) 100%);
 }*/
 
-body{/*aca solo se esta aplicando a la pagina principal, mas precisamente al body */
+body{/*color de la pagina entera*/
     background: rgb(252,2,2);
     background: radial-gradient(circle, rgba(255, 230, 1, 0.651) 0%, rgba(248, 3, 3, 0.582) 35%, rgba(0,0,0,1) 100%);
-    padding: 10px;
-    margin: 20px;
+    margin:3px;
+    position: relative;
 }
-
-.h1-estilo{
+header{/*colores y forma del titulo*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
+    font-size: 2.5em;
     font-style: initial;
     text-align: center;
     color: aqua;
-    padding: auto;
+    margin-top: 10px;
+    margin: 5px;
+    position: relative;
+    padding: 3px;
 }
-.h2-estilo{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.estilo-titulo{/*el estilo que tomara THE BURGUER HOUSE */
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    color: #09f744;
     font-size: 2rem;
-    font-style: initial;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin: 5px;
+    position:relative;
+}
+.estilo-subtitulo{ /*estilo que tomara LA CASA DE LA HAMBURGUESA CASERA */
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 0);
+    margin: 5px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    position: relative;
+}
+/*NAVEGADOR*/
+nav{
     text-align: center;
-    color: aqua;
-    padding: 1px;
+    text-decoration: dashed;
+    margin: 5px;
+    margin-top: 10px;
+    position: relative;
+}
+/*NAVEGADOR Y LAS FUENTES*/
+.estilo-navegador{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: rgb(4, 0, 255);
+    background: rgb(252,249,2);/*color de fondo del nav*/
+    background: linear-gradient(90deg, rgba(252,249,2,1) 10%, rgba(255,0,0,0.7959558823529411) 50%, rgba(252,249,2,1) 90%);
+    margin-left: 15rem;/*margen izq desde el borde de la pantalla hacia el centro*/
+    margin-right: 15rem;/*margen der desde el borde de la pantalla hacia el centro*/
+    border-radius: 50px;/*redondea los bordes donde esta contenido el nav*/
+}
+/*IMAGENES DE LA PRIMERA PAGINA*/
+.posicion-img{/*posicion de todas las imagenes en general*/
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 10px;
+    width: 60%;
+    transform: rotate(0deg);
+    position: relative;
 }
 
-.h3-estilo{
+.tapa-img{/*estilo de la tapa*/
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 10px;
+    width: 60%;
+    transform: rotate(0deg);
+    position: relative;
+    }    
+
+.bacon-img{/*estilo del bacon*/
+    display:block;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 10px;
+    width: 60%;
+    transform: rotate(0deg);
+    position: relative;
+}
+
+.hambqueso-img{/*estilo de la hamburguesa con queso*/
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 10px;
+    width: 60%;
+    transform: rotate(0deg);
+    position: relative;
+}
+
+.hambursola-img{/*estilo de la hamburguesa sola*/
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 10px;
+    width: 60%;
+    transform: rotate(0deg);
+    position: relative;
+}
+
+.basepan-img{/*estilo de la pase del pan*/
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 10px;
+    width: 60%;
+    transform: rotate(0deg);
+    position: relative;
+}
+
+.bebida-img{
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 10px;
+    width: 30%;
+    transform: rotate(0deg);
+    position: relative;
+}
+
+/*ACA COMIENZAN LOS TEXTOS DE CADA IMAGEN, QUE LUEGO HAY QUE AGREGARLE LOS ENLACES*/
+.texto-gral{ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: #09f744;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 50%; /* Ajusta la posición vertical según sea necesario */
+    left: 60%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-50%, -50%);
+    }
+.texto-bacon{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: #fde400;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    top: 50%; /* Ajusta la posición vertical según sea necesario */
+    left: 60%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-50%, -50%);
+
+}
+
+.texto-hambqueso{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: #09f744;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    top: 50%; /* Ajusta la posición vertical según sea necesario */
+    left: 60%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-50%, -50%);
+}
+
+.texto-hambsola{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: #09f744;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    top: 50%; /* Ajusta la posición vertical según sea necesario */
+    left: 60%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-50%, -50%);
+}
+
+.texto-basepan{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: #09f744;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    top: 50%; /* Ajusta la posición vertical según sea necesario */
+    left: 60%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-50%, -50%);
+}
+.texto-bebida{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: #09f744;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    top: 50%; /* Ajusta la posición vertical según sea necesario */
+    left: 60%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-50%, -50%);
+}
+
+
+ACA ESTAN LOS CONTENEDORES Y FUENTES DE ESTILO
+/*
+/*MANERA 1 */
+/*
+    .image-container {
+        display: flex;
+        align-items: center; /* Centra verticalmente el contenido 
+        background-image: url('background-image.jpg'); /* Fondo de la sección 
+        background-size: cover; /* Ajusta el tamaño del fondo 
+        padding: 20px;
+    }
+    
+    .left-image {
+        flex: 1; /* Ocupa todo el espacio restante en el contenedor 
+        text-align: center;
+    }
+    
+    .left-image img {
+        max-width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor 
+    }
+    
+    .right-images {
+        flex: 5; /* Ocupa 5 veces el espacio de la imagen izquierda 
+        display: flex;
+        flex-direction: column; /* Apila verticalmente las imágenes y el texto 
+    }
+    
+    .image-with-text {
+        text-align: center;
+        margin-bottom: 20px; /* Espacio entre cada imagen y su texto 
+    }
+    
+    .image-with-text img {
+        max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor 
+    }
+    */
+
+/* MANERA 2 
+
+
+.container {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido 
+    padding: 20px;
+}
+
+.left-text {
+    flex: 1; /* Ocupa 1 parte del espacio 
+    padding: 20px;
+    background-image: url('background-image-left.jpg');
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.right-texts {
+    flex: 5; /* Ocupa 5 partes del espacio 
+    display: flex;
+    flex-direction: column; /* Apila verticalmente los textos e imágenes 
+}
+
+.text-with-bg {
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio entre cada texto e imagen 
+    text-align: center;
+    color: white;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.hamburguesa-estilo-img{
+    background-image: url(assets\image\pagina_principal_tapa_superior_pan.png);/*url de la imagen*/
+/*    background-size: cover;/*ajusta el tamaño de la imagen al contenedor*/
+/*    background-repeat: no-repeat;/*evita que la imagen se repita*/
+   
+/*   
+    .tapa_superior_img{
+        display: block;
+        margin-left: auto;
+        margin-right: 10%;
+        width: 30%;
+        transform: rotate(-2deg); /*esto es para rotar la imagen y que quede recta*/
+/*    }
+/*    
+.hamburguesa-estilo-font{    
+    color:rgb(0, 255, 21) ; /*le da el color al texto*/
+/*    padding: 10px;/*le sa un margen al texto dentro de la imagen*/
+/*    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    }
+  */
+    /*
+    line-height: 200px;
+
+
+
+    /*
+    display: inline-block;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.5rem;
     font-style: oblique;
     text-align: center;
     color: chartreuse;
     padding: auto;
-    background-image: ;
+*/
+
+
+/*IMAGENES*/
+/*
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    width: 50%;
+
+}*/
+
+    /*
+    display: block;
+    position:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    transform: rotate(-2deg); /*esto es para rotar la imagen y que quede recta*/
+*/    
 }
 
+.bacon{
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    width: 30%;
+
+    /*
+    position:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    height: auto;
+    */
+    }
+    
+
+.carne1-con-queso{
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    width: 30%;
 
 
+    /*position:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    height: auto;*/
+}
 
+.carne2-carne{
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    width: 30%;
+/*
+    position:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    height: auto;
+    */
+}
 
+.base-pan{
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    width: 30%;
+/*
+    position:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    height: auto;
+    */
+}
 
-
-
-
-
-
-
-
-
+.bebidas{
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    width: 20%;
+/*
+    position:flex;
+    flex-direction: initial;
+    align-items: left;
+    max-width: 300px;
+    height: auto;
+    */
+}
 
 
 
