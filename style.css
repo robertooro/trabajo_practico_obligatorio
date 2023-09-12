@@ -1,27 +1,102 @@
+/*podria usarse el selector universal * para aplicar a todas las paginas del proyecto:
 
-body{
+*{background: rgb(252,2,2);
+    background: radial-gradient(circle, rgba(255, 230, 1, 0.651) 0%, rgba(248, 3, 3, 0.582) 35%, rgba(0,0,0,1) 100%);
+}*/
+
+body{/*aca solo se esta aplicando a la pagina principal, mas precisamente al body */
     background: rgb(252,2,2);
-    background: radial-gradient(circle, rgba(252, 2, 2, 0.5) 0%, rgba(248, 3, 3, 0.582) 35%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(255, 230, 1, 0.651) 0%, rgba(248, 3, 3, 0.582) 35%, rgba(0,0,0,1) 100%);
+    padding: 10px;
+    margin: 20px;
 }
 
-/*Tapa pan y titulo*/
+.h1-estilo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    font-style: initial;
+    text-align: center;
+    color: aqua;
+    padding: auto;
+}
+.h2-estilo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-style: initial;
+    text-align: center;
+    color: aqua;
+    padding: 1px;
+}
+
+.h3-estilo{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    font-style: oblique;
+    text-align: center;
+    color: chartreuse;
+    padding: auto;
+    background-image: ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tapa pan y titulo
 .tapa-pan-titulo{
     position: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 100vw;
-    background: url(assets\image\pagina_principal_panBase.png);¨
+    background: url(assets\image\pagina_principal_tapa_superior_pan.png);¨
     background-size: cover;
 }
 
-.tapa-pan-titulo img{
+.tapa-pan-imagen{
+position:flex;
+flex-direction: column;
+align-items: center;
     max-width: 500px;
     height: auto;
 }
 .tapa-pan-titulo h1 {
     background-color: rgba(0, 0, 0, 7);
 color: rgb(255, 0, 0); /*color de titulo h1*/
+/*
 padding: 10px;
 border-radius: 5px;
 font-size: 24px;
@@ -38,7 +113,10 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 5px;
     font-size: 16px;
     */
-}
+
+
+
+/*
 
 .panceta-segundo img{
     max-width: 500px;
@@ -52,6 +130,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: solid - red;
     text-align: center;
 }
+*/
 /*imagen bacon que nos lleva a pagina dos, donde estaran las hamburguesas*/
 
 /*imagen lechuga tomate o queso que nos lleva a la pagina 3, donde estaran las papas fritas */

@@ -3,63 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css" ><!--ruta para ir a css-->
     <title>The Burguer House</title>
-    <link role="icon" href="assets/image/favicon.ico" type="image/x-icon">
     
-    
+   
+    <link role="icon" href="assets/image/favicon.ico" type="image/x-icon"> 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" type="text*css" href="style\body">
+    
     <!-- en esta pagina va una hamburguesa que se divide en varios sectores y nos lleva a las distintas
     paginas, jungo con un vaso de cerveza o gaseosa que nos lleva tambien a la pagina de de bebidas
     en el fondo de la imagen debe haber un enlace que lleve a los datos nuestros-->
     <!-- cada codigo debe decir que hace, de esta manera todos estamos al tanto de que se va realizando
     de donde sale y que modifica, asi cualquier cambio o comportamiento esta asentado, recordar que esto
     esta en el repositorio-->
-    
-
-
     <!--color de fondo de la pagina vinculado al style.css-->
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
     <body>
         <section>
+        <p>
+            <h1 class="h1-estilo">The Burguer House</h1>
+        </p><!--clase para el estilo del titulo-->
         
-            <div class="tapa-pan-titulo">
-                
-                    <img src="assets\image\pagina_principal_tapa_superior_pan.png" alt="tapa pan">
-                    <h1 class="h1-estilo">The Burguer House</h1>
-                    <h2>La casa de la hamburguesa casera</h2>
+        <p>
+            <h2 class="h2-estilo">La casa de la hamburguesa casera</h2><!--clase para el estilo del subtitulo-->
+        </p>
+        </section>
+
+        
+        <section>
+            <div class="tapa-pan-imagen1">
+                <img src="assets\image\pagina_principal_tapa_superior_pan.png" alt="tapa pan"><!--imagen tapa pan-->
+                <h3 class="h3-estilo">hamburguesas</h3>
+            </div>
+        </section>
+    
+        <section>
+            <div class="panceta-imagen2">
+                <img src="assets\image\pagina_principal_bacon.png" alt="bacon">
+                <h3>papas fritas</h3>
             </div>
             
+            <div class="carne-imagen3">
+                <img src="assets\image\pagina_principal_carne1_con_queso.png" alt="carne">
+                <h3>sides</h3>
+            </div>
+            <div class="carne-imagen4">
+                <img src="assets\image\pagina_principal_carne2_carne.png" alt="carne">
+                <h3>ensaladas</h3>
+            </div>
+            <div class="base-pan-imagen5">
+                <img src="assets\image\pagina_principal_panBase.png" alt="base-pan">
+                <h2>Nosotros y nuestra historia</h2>    
+            </div>
+        </section>
 
-    </section>
-    <section>
-        <div class="panceta-segundo">
-            <img src="assets\image\pagina_principal_bacon.png" alt="bacon">
-            <h3>hamburguesas</h3>
-        </div>
-
-        <div class=""> 
-            <h3>papas fritas</h3>
-        </div>
-
-        <div>
-            <h3>sides</h3>
-        </div>
-        <div>
-            
-        </div>
-        <div>
-            <h3>bebidas</h3>
-        </div>
-        <div class="base-pan-nosotros">
-            <h2>Nosotros y nuestra historia</h2>    
-        </div>
-        
-    </section>
+        <section>
+            <div>
+                <img src="assets\image\pagina_principal_vaso_gaseosa.png" alt="vaso-gaseosa">
+                <h3>bebidas</h3>
+            </div>        
+        </section>
     
     </body>
 </html>
