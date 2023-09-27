@@ -4,603 +4,251 @@
     background: radial-gradient(circle, rgba(255, 230, 1, 0.651) 0%, rgba(248, 3, 3, 0.582) 35%, rgba(0,0,0,1) 100%);
 }*/
 
-body{/*color de la pagina entera*/
+.color-fondoprincipal{/*COLOR DE LA PRIMERA PAGINA*/
     background: rgb(252,2,2);
     background: radial-gradient(circle, rgba(255, 230, 1, 0.651) 0%, rgba(248, 3, 3, 0.582) 35%, rgba(0,0,0,1) 100%);
-    margin:3px;
-    position: relative;
+    margin:0px;
+    position: calc(10%);
 }
-header{/*colores y forma del titulo*/
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2.5em;
-    font-style: initial;
-    text-align: center;
-    color: aqua;
-    margin-top: 10px;
-    margin: 5px;
-    position: relative;
-    padding: 3px;
+.color-fondopagina2{
+    background-color: black;
+    margin: 0px;
+    position: calc(10%);
 }
-.estilo-titulo{/*el estilo que tomara THE BURGUER HOUSE */
-    font-size: medium;
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
-    color: #09f744;
-    font-size: 2rem;
+ .h1color-neon{ /*COLOR DEL TITULO PRINCIPAL */
     margin-top: 5px;
-    margin-bottom: 5px;
-    margin: 5px;
-    position:relative;
+    margin-bottom: 0%;
+  color: #fff;
+  text-shadow:
+      0 0 7px #ff0000,
+      0 0 10px #fff,
+      0 0 21px #ff4800,
+      0 0 42px rgb(0, 255, 255),
+      0 0 82px rgb(0, 255, 255),
+      0 0 92px rgb(0, 255, 255),
+      0 0 102px rgb(0, 255, 255),
+      0 0 151px rgb(0, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4.2rem;
+    font-family: 'JelleeBold';
 }
-.estilo-subtitulo{ /*estilo que tomara LA CASA DE LA HAMBURGUESA CASERA */
-    font-size: 1.5rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(255, 255, 0);
-    margin: 5px;
-    margin-top: 3px;
-    margin-bottom: 5px;
-    position: relative;
-}
+
+.h2color-neon{/*COLOR DEL SUBTITULO*/
+    margin-top: 5px;
+    color: #9d00ac;
+    text-shadow:
+        0 0 7px #ff0000,
+        0 0 10px #fff,
+        0 0 21px #ffffff,
+        0 0 42px rgb(255, 251, 0),
+        0 0 82px rgb(251, 255, 0),
+        0 0 92px rgb(0, 255, 255),
+        0 0 102px rgb(0, 255, 255),
+        0 0 151px rgb(0, 255, 255);
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 1.2rem;
+      font-family:papyrus;        
+    }
+
+/******************************************************************************************************/
+/******************************************************************************************************/    
 /*NAVEGADOR*/
-nav{
+nav{    
     text-align: center;
     text-decoration: dashed;
     margin: 5px;
     margin-top: 10px;
     position: relative;
 }
+
 /*NAVEGADOR Y LAS FUENTES*/
-.estilo-navegador{
-    font-size: 1.5rem;
+.estilo-navegador {
+    font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
     color: rgb(4, 0, 255);
     background: rgb(252,249,2);/*color de fondo del nav*/
     background: linear-gradient(90deg, rgba(252,249,2,1) 10%, rgba(255,0,0,0.7959558823529411) 50%, rgba(252,249,2,1) 90%);
-    margin-left: 15rem;/*margen izq desde el borde de la pantalla hacia el centro*/
-    margin-right: 15rem;/*margen der desde el borde de la pantalla hacia el centro*/
+    margin-left: 22rem;/*margen izq desde el borde de la pantalla hacia el centro*/
+    margin-right: 22rem;/*margen der desde el borde de la pantalla hacia el centro*/
     border-radius: 50px;/*redondea los bordes donde esta contenido el nav*/
+    -webkit-perspective: 2cap;
+    scroll-behavior: smooth;
+    text-decoration:none;
+    transition: 0.3s;
 }
+
+/******************************************************************************************************/
+/******************************************************************************************************/
+
 /*IMAGENES DE LA PRIMERA PAGINA*/
-.posicion-img{/*posicion de todas las imagenes en general excepto bebida*/
-    display: block;
-    margin-left: auto;
-    margin-right: 10%;
-    margin-top: 10px;
-    width: 60%;
-    transform: rotate(0deg);
-    position: relative;
-}
-
-.posicionbeb-img{/*posicion de la imagen del vaso */
+/*CONTENEDOR DE IMAGENES*/
+.info-contenedorprincipal{
     display: flex;
-    margin-left: 10%;
-    margin-right: auto;
-    margin-top: 10px;
-    width: 60%;
-    transform: rotate(0deg);
-    position: relative;  
-}
-.tapa-img{/*estilo de la tapa*/
-    display: block;
-    margin-left: auto;
-    margin-right: 10%;
-    margin-top: 10px;
-    width: 60%;
-    transform: rotate(0deg);
     position: relative;
-    }    
+   }
 
-.bacon-img{/*estilo del bacon*/
-    display:block;
-    margin-left: auto;
-    margin-right: 10%;
-    margin-top: 10px;
-    width: 60%;
-    transform: rotate(0deg);
-    position: relative;
+/*IMAGEN IZQUIERDA VASO Y TEXTO IZQUIERDO*/
+.izquierda-img1{
+    flex: 1;
+    margin-left: 15rem;
+    background-image: url("assets\image\pagina_principal_vaso_gaseosa.png");
+    background-repeat: no-repeat;
+    height: 0rem;
+    width: 500rem;
 }
-
-.hambqueso-img{/*estilo de la hamburguesa con queso*/
-    display: block;
-    margin-left: auto;
-    margin-right: 10%;
-    margin-top: 10px;
-    width: 60%;
-    transform: rotate(0deg);
-    position: relative;
-}
-
-.hambursola-img{/*estilo de la hamburguesa sola*/
-    display: block;
-    margin-left: auto;
-    margin-right: 10%;
-    margin-top: 10px;
-    width: 60%;
-    transform: rotate(0deg);
-    position: relative;
-}
-
-.basepan-img{/*estilo de la pase del pan*/
-    display: block;
-    margin-left: auto;
-    margin-right: 10%;
-    margin-top: 10px;
-    width: 60%;
-    transform: rotate(0deg);
-    position: relative;
-}
-
-.bebida-img{
-    display: block;
-    margin-left: 10%
-    margin-right: auto;
-    margin-top: 10px;
-    width: 30%;
-    transform: rotate(0deg);
-    position: relative;
-}
-
-/*ACA COMIENZAN LOS TEXTOS DE CADA IMAGEN, QUE LUEGO HAY QUE AGREGARLE LOS ENLACES*/
-.texto-gral{ 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color: #09f744;
-    text-align: center;
-    width: 50%;
+.textoIzquierdoColor{
+    font-family:'MrsBeasleyRegular';
+    font-size: 3rem;
+    color: #00ffff;
+    text-shadow:
+        0 0 7px #ff0000,
+        0 0 10px #fff,
+        0 0 21px #ffffff,
+        0 0 42px rgb(255, 251, 0),
+        0 0 82px rgb(255, 153, 0),
+        0 0 92px rgb(0, 255, 255),
+        0 0 102px rgb(0, 255, 255),
+        0 0 151px rgb(255, 0, 0);
+        }
+.textoIzquierdo{
     position: absolute;
-    top: 50%; /* Ajusta la posición vertical según sea necesario */
-    left: 60%; /* Ajusta la posición horizontal según sea necesario */
-    transform: translate(-50%, -50%);
-    }
-.texto-bacon{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color: #fde400;
-    text-align: center;
-    width: 50%;
-    position: relative;
-    top: 50%; /* Ajusta la posición vertical según sea necesario */
-    left: 60%; /* Ajusta la posición horizontal según sea necesario */
-    transform: translate(-50%, -50%);
-
-}
-
-.texto-hambqueso{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color: #09f744;
-    text-align: center;
-    width: 50%;
-    position: relative;
-    top: 50%; /* Ajusta la posición vertical según sea necesario */
-    left: 60%; /* Ajusta la posición horizontal según sea necesario */
-    transform: translate(-50%, -50%);
-}
-
-.texto-hambsola{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color: #09f744;
-    text-align: center;
-    width: 50%;
-    position: relative;
-    top: 50%; /* Ajusta la posición vertical según sea necesario */
-    left: 60%; /* Ajusta la posición horizontal según sea necesario */
-    transform: translate(-50%, -50%);
-}
-
-.texto-basepan{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color: #09f744;
-    text-align: center;
-    width: 50%;
-    position: relative;
-    top: 50%; /* Ajusta la posición vertical según sea necesario */
-    left: 60%; /* Ajusta la posición horizontal según sea necesario */
-    transform: translate(-50%, -50%);
-}
-.texto-bebida{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color: #09f744;
     text-align:left;
-    width: 50%;
-    position: relative;
-    top: 5%; /* Ajusta la posición vertical según sea necesario */
-    left: 5%; /* Ajusta la posición horizontal según sea necesario */
-    transform: translate(-50%, -50%);
+    margin-left: 15rem;
+    background-image: url("assets\image\pagina_principal_vaso_gaseosa.png");    
+    background: no-repeat;
+    top: 15rem;
+    left: 2rem;
 }
 
-
-ACA ESTAN LOS CONTENEDORES Y FUENTES DE ESTILO
-/*
-/*MANERA 1 */
-/*
-    .image-container {
-        display: flex;
-        align-items: center; /* Centra verticalmente el contenido 
-        background-image: url('background-image.jpg'); /* Fondo de la sección 
-        background-size: cover; /* Ajusta el tamaño del fondo 
-        padding: 20px;
+/*IMAGEN DERECHA HAMBURGUESA Y TEXTO DERECHO*/
+.imagen-size{
+    width: 80%;
+    height: auto;
+}
+.hamburguesa-img2{
+    margin-left: 70rem;
+    margin-top: 10rem;
+    padding: -8rem;
+}
+.bacon-img3{
+    margin: -10;
+    padding: -10;
+}
+.carneQueso-img4{
+    margin: -100;
+    padding: 0;
+}
+.carne-img5{
+    margin: 0;
+    padding: 0;
     }
+.basePan-img6{
+    margin: 0;
+    padding: 0;
+}
+.textoDerechoColorGeneral{
+    font-family:'MrsBeasleyRegular';
+    font-size: 3rem;
+    color: #ff0000;
+    text-shadow:
+    0 0 7px #ff0000,
+    0 0 10px #fff,
+    0 0 21px #ffffff,
+    0 0 42px rgb(255, 251, 0),
+    0 0 82px rgb(0, 255, 242),
+    0 0 92px rgb(0, 255, 255),
+    0 0 102px rgb(0, 255, 255),
+    0 0 151px rgb(255, 0, 0);
+    text-decoration: none;
+    } 
+.textoTapaPan{
+    flex: 1;   
+    text-align: right;
+    margin-left: 15rem;
     
-    .left-image {
-        flex: 1; /* Ocupa todo el espacio restante en el contenedor 
-        text-align: center;
-    }
-    
-    .left-image img {
-        max-width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor 
-    }
-    
-    .right-images {
-        flex: 5; /* Ocupa 5 veces el espacio de la imagen izquierda 
-        display: flex;
-        flex-direction: column; /* Apila verticalmente las imágenes y el texto 
-    }
-    
-    .image-with-text {
-        text-align: center;
-        margin-bottom: 20px; /* Espacio entre cada imagen y su texto 
-    }
-    
-    .image-with-text img {
-        max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor 
-    }
-    */
-
-/* MANERA 2 
-
-
-.container {
+    background-image: url("assets\image\pagina_principal_tapa_superior_pan.png");    
+    background: no-repeat;
+    position: absolute;
+    left: 57rem;
+    bottom: 37rem;
+}
+.textoBacon{     
+    flex: 2;   
+    text-align: right;
+    background-image: url("assets\image\pagina_principal_bacon.png");    
+    background: no-repeat;
+    position: absolute;
+    left: 75rem;
+    bottom: 26rem;
+}
+.textoCarneQueso{     
+    flex: 3;   
+    text-align: right;
+    background-image: url("assets\image\pagina_principal_carne1_con_queso.png");    
+    background: no-repeat;
+    position: absolute;
+    left: 77rem;
+    bottom: 16.5rem;
+}
+.textoCarne{     
+    flex: 4;   
+    text-align: right;
+    background-image: url("assets\image\pagina_principal_carne2_carne.png");    
+    background: no-repeat;
+    position: absolute;
+    left: 81rem;
+    bottom: 7rem;
+}
+.textoBasePan{     
+    flex: 5;   
+    text-align: right;
+    background-image: url("assets/image/pagina_principal_panBase.png");    
+    background: no-repeat;
+    position: absolute;
+    left: 79rem;
+    bottom: -2.5rem;
+}
+/**********************************************************
+***********************************************************
+***********************************************************
+*****************PAGINA 2 HAMBURGUESAS*********************
+***********************************************************
+***********************************************************
+**********************************************************/
+.titulo-Ham{
+    font-family:'Poppins', sans-serif ;
+    color: #ff0000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 5rem;
+}
+.contenedor-flex {
     display: flex;
-    align-items: center; /* Centra verticalmente el contenido 
-    padding: 20px;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan a la siguiente línea cuando no haya suficiente espacio en el contenedor */
+    justify-content: flex-start; /* Alinea las imágenes a la izquierda */
+    align-content: flex-start; /* Alinea las imágenes en la parte superior */
 }
 
-.left-text {
-    flex: 1; /* Ocupa 1 parte del espacio 
-    padding: 20px;
-    background-image: url('background-image-left.jpg');
-    background-size: cover;
-    text-align: center;
-    color: white;
+.imagen {
+    width: 50px; /* Establece el ancho deseado para cada imagen */
+    height: 50px; /* Establece el alto deseado para cada imagen */
+    margin: 5px; /* Agrega espacio entre las imágenes si lo deseas */
+    background-color: rgb(12, 12, 12); /* Puedes agregar estilos de fondo si es necesario */
 }
 
-.right-texts {
-    flex: 5; /* Ocupa 5 partes del espacio 
-    display: flex;
-    flex-direction: column; /* Apila verticalmente los textos e imágenes 
+.titulo{ 
+    font-style: italic;
+    color: yellow;  
+    font-size: 2rem;
+    margin-left: 15rem;
+    justify-items: center;
 }
 
-.text-with-bg {
-    background-size: cover;
-    padding: 20px;
-    margin-bottom: 20px; /* Espacio entre cada texto e imagen 
-    text-align: center;
-    color: white;
+.img-redondeada{
+    border-radius: 50px;
 }
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.hamburguesa-estilo-img{
-    background-image: url(assets\image\pagina_principal_tapa_superior_pan.png);/*url de la imagen*/
-/*    background-size: cover;/*ajusta el tamaño de la imagen al contenedor*/
-/*    background-repeat: no-repeat;/*evita que la imagen se repita*/
-   
-/*   
-    .tapa_superior_img{
-        display: block;
-        margin-left: auto;
-        margin-right: 10%;
-        width: 30%;
-        transform: rotate(-2deg); /*esto es para rotar la imagen y que quede recta*/
-/*    }
-/*    
-.hamburguesa-estilo-font{    
-    color:rgb(0, 255, 21) ; /*le da el color al texto*/
-/*    padding: 10px;/*le sa un margen al texto dentro de la imagen*/
-/*    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2.5rem;
-    }
-  */
-    /*
-    line-height: 200px;
-
-
-
-    /*
-    display: inline-block;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2.5rem;
-    font-style: oblique;
-    text-align: center;
-    color: chartreuse;
-    padding: auto;
-*/
-
-
-/*IMAGENES*/
-/*
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: 10%;
-    width: 50%;
-
-}*/
-
-    /*
-    display: block;
-    position:flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    height: auto;
-    transform: rotate(-2deg); /*esto es para rotar la imagen y que quede recta*/
-   
-/*
-
-.bacon{
-    display: block;
-    margin-left: auto;
-    margin-right: 10%;
-    width: 30%;
-
-    /*
-    position:flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    height: auto;
-    */
-    }
-    
-/*
-.carne1-con-queso{
-    display: block;
-    margin-left: auto;
-    margin-right: 10%;
-    width: 30%;
-
-
-    /*position:flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    height: auto;*/
-
-/*
-.carne2-carne{
-    display: block;
-    margin-left: auto;
-    margin-right: 10%;
-    width: 30%;
-/*
-    position:flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    height: auto;
-    */
-/*
-
-.base-pan{
-    display: block;
-    margin-left: auto;
-    margin-right: 10%;
-    width: 30%;
-/*
-    position:flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    height: auto;
-    */
-/*
-
-.bebidas{
-    display: block;
-    margin-left: 10%;
-    margin-right: auto;
-    width: 20%;
-/*
-    position:flex;
-    flex-direction: initial;
-    align-items: left;
-    max-width: 300px;
-    height: auto;
-    */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Tapa pan y titulo
-.tapa-pan-titulo{
-    position: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100vw;
-    background: url(assets\image\pagina_principal_tapa_superior_pan.png);¨
-    background-size: cover;
-}
-
-.tapa-pan-imagen{
-position:flex;
-flex-direction: column;
-align-items: center;
-    max-width: 500px;
-    height: auto;
-}
-.tapa-pan-titulo h1 {
-    background-color: rgba(0, 0, 0, 7);
-color: rgb(255, 0, 0); /*color de titulo h1*/
-/*
-padding: 10px;
-border-radius: 5px;
-font-size: 24px;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-
-    /*position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgba(0,0,0,1);
-    color: rgba(5, 9, 250, 0.726);
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    */
-
-
-
-/*
-
-.panceta-segundo img{
-    max-width: 500px;
-    height: auto;
-}
-
-
-
-.h1-estilo{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: solid - red;
-    text-align: center;
-}
-*/
-/*imagen bacon que nos lleva a pagina dos, donde estaran las hamburguesas*/
-
-/*imagen lechuga tomate o queso que nos lleva a la pagina 3, donde estaran las papas fritas */
-
-/*imagen carne que nos llevara a la pagina 4, donde estaran los sides o acompañamientos */
-
-/*imagen de gaseosa o cerveza al lado de la hamburguesa que nos llevara a la pagina 5, donde estaran las bebidas */
-
-/*imagen base del pan que nos llevara a la pagina 6, donde estaran nuestros datos */
-
